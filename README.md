@@ -1,18 +1,19 @@
 # OPNsense Firewall on FreeBSD VM
+(Modified for the needs my project - itsgudenuf)
 
 CI Name | Actions Workflow | CI Status |
 |--------|--------|--------|
-| BicepBuild | [bicepBuild.yml](./.github/workflows/bicepBuild.yml) | [![bicepBuildCI](https://github.com/dmauser/opnazure/actions/workflows/bicepBuild.yml/badge.svg)](https://github.com/dmauser/opnazure/actions/workflows/bicepBuild.yml) |
-| Deployment Checker - Active Active | [deploymentCheker-active-active.yml](./.github/workflows/deploymentCheker-active-active.yml) | [![deploymentChekeractiveactiveactiveCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-active-active.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-active-active.yml) |
-| Deployment Checker - two nics | [deploymentCheker-two-nics.yml](./.github/workflows/deploymentCheker-two-nics.yml) | [![deploymentChekertwonicsCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-two-nics.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-two-nics.yml) |
-| Deployment Checker - single nic | [deploymentCheker-sing-nic.yml](./.github/workflows/deploymentCheker-sing-nic.yml) | [![deploymentChekersingnicCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-sing-nic.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-sing-nic.yml) |
-| Deployment Checker - new vnet Active Active | [deploymentCheker-newvnet-active-active.yml](./.github/workflows/deploymentCheker-newvnet-active-active.yml) | [![deploymentChekeractivenewvnetactiveactiveCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-active-active.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-active-active.yml) |
-| Deployment Checker - new vnet two nics | [deploymentCheker-newvnet-two-nics.yml](./.github/workflows/deploymentCheker-two-nics.yml) | [![deploymentChekernewvnettwonicsCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-newvnet-two-nics.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-newvnet-two-nics.yml) |
-| Deployment Checker - new vnet single nic | [deploymentCheker-newvnet-sing-nic.yml](./.github/workflows/deploymentCheker-sing-nic.yml) | [![deploymentChekernewvnetsingnicCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-newvnet-sing-nic.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/deploymentCheker-newvnet-sing-nic.yml) |
+| BicepBuild | [bicepBuild.yml](./.github/workflows/bicepBuild.yml) | [![bicepBuildCI](https://github.com/itsgudenuf/opnazure/actions/workflows/bicepBuild.yml/badge.svg)](https://github.com/itsgudenuf/opnazure/actions/workflows/bicepBuild.yml) |
+| Deployment Checker - Active Active | [deploymentCheker-active-active.yml](./.github/workflows/deploymentCheker-active-active.yml) | [![deploymentChekeractiveactiveactiveCI](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-active-active.yml/badge.svg?branch=dev)](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-active-active.yml) |
+| Deployment Checker - two nics | [deploymentCheker-two-nics.yml](./.github/workflows/deploymentCheker-two-nics.yml) | [![deploymentChekertwonicsCI](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-two-nics.yml/badge.svg?branch=dev)](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-two-nics.yml) |
+| Deployment Checker - single nic | [deploymentCheker-sing-nic.yml](./.github/workflows/deploymentCheker-sing-nic.yml) | [![deploymentChekersingnicCI](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-sing-nic.yml/badge.svg?branch=dev)](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-sing-nic.yml) |
+| Deployment Checker - new vnet Active Active | [deploymentCheker-newvnet-active-active.yml](./.github/workflows/deploymentCheker-newvnet-active-active.yml) | [![deploymentChekeractivenewvnetactiveactiveCI](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-active-active.yml/badge.svg?branch=dev)](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-active-active.yml) |
+| Deployment Checker - new vnet two nics | [deploymentCheker-newvnet-two-nics.yml](./.github/workflows/deploymentCheker-two-nics.yml) | [![deploymentChekernewvnettwonicsCI](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-newvnet-two-nics.yml/badge.svg?branch=dev)](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-newvnet-two-nics.yml) |
+| Deployment Checker - new vnet single nic | [deploymentCheker-newvnet-sing-nic.yml](./.github/workflows/deploymentCheker-sing-nic.yml) | [![deploymentChekernewvnetsingnicCI](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-newvnet-sing-nic.yml/badge.svg?branch=dev)](https://github.com/itsgudenuf/opnazure/actions/workflows/deploymentCheker-newvnet-sing-nic.yml) |
 
 **Deployment Wizard**
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fitsgudenuf%2Fopnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fitsgudenuf%2Fopnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
 
 The template allows you to deploy an OPNsense Firewall VM using the opnsense-bootsrtap installation method. It creates an FreeBSD VM, does a silent install of OPNsense using a modified version of opnsense-bootstrap.sh with the settings provided.
 
@@ -27,6 +28,10 @@ After deployment, you can go to <https://PublicIP>, then input the user and pass
 In case of Active-Active the URL should be <https://PublicIP:50443> for Primary server and <https://PublicIP:50444> for Secondary server.
 
 ## Updates
+
+## August-2022
+- Updated to OPNSense 22.7
+
 
 ## April-2022
 - Updated FreeBSD 13 and OPNSense 22.1
@@ -106,7 +111,7 @@ Build custom deployment form
 
 ## Feedbacks
 
-Please use Github [issues tab](https://github.com/dmauser/opnazure/issues) to provide feedback.
+Please use Github [issues tab](https://github.com/itsgudenuf/opnazure/issues) to provide feedback.
 
 ## Credits
 
