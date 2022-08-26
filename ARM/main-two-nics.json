@@ -91,7 +91,7 @@
       "networkSecurityGroupName": "[format('{0}-NSG', parameters('virtualMachineName'))]",
       "winvmName": "VM-Win11Client",
       "winvmnetworkSecurityGroupName": "[format('{0}-NSG', variables('winvmName'))]",
-      "winvmpublicipName": "[format('{0}-PublicIP', variables('winvmName'))]"
+      "winvmpublicipName": "[format('{0}-PublicIP', variables('winvmName'))]"   
     },
     "resources": [
       {
